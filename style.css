@@ -1,9 +1,32 @@
-
 article p{
-    background-color: rgb(149, 0, 255)
+    background-color: darkorchid;
     
 }
 
+.vstyplenie{
+    display: flex;
+    align-content: center;
+}
+input{
+    background-color: lime;
+}
+.komaru:hover{
+    transform:rotate(180deg)
+}
+
+.imgs{
+    animation-name: kartinki;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes kartinki{
+    50%{
+        transform: scale(1.4);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 a{
     text-decoration: none;
     display: inline-block;
@@ -13,6 +36,10 @@ a{
     border-radius: 9px;
 }
 
+a:hover{
+    color: lime;
+    background-color: darkorchid;
+}
 h1{
     color: rgb(0, 255, 0)
 }
